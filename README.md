@@ -19,7 +19,7 @@ It also supports `response_format=verbose_json` and returns an output aligned to
 .
 ├── wrangler.jsonc
 └── src
-└── index.ts
+     └── index.ts
 
 ````
 
