@@ -50,7 +50,7 @@ Example:
   "ai": { "binding": "AI" },
 
   "r2_buckets": [
-    { "binding": "VIDEO_KNOW_DEV", "bucket_name": "video-know-dev" }
+    { "binding": "BUCKET_DEV", "bucket_name": "bucket-dev" }
   ]
 }
 ````
@@ -78,13 +78,13 @@ npx wrangler r2 bucket list
 ### 3.2 Create the bucket (if needed)
 
 ```bash
-npx wrangler r2 bucket create video-know-dev
+npx wrangler r2 bucket create bucket-dev
 ```
 
 ### 3.3 Upload a test audio file (optional)
 
 ```bash
-npx wrangler r2 object put video-know-dev/uploads/audio/test.mp3 --file ./test.mp3
+npx wrangler r2 object put bucket-dev/uploads/audio/test.mp3 --file ./test.mp3
 ```
 
 ---
@@ -201,7 +201,7 @@ Common issues:
 
 1. **bucket_name validation error (contains `_`)**
 
-   * Rename/use a valid bucket name like `video-know-dev`, and make sure it exists in the dashboard.
+   * Rename/use a valid bucket name like `bucket-dev`, and make sure it exists in the dashboard.
 
 2. **401 Invalid API key**
 
